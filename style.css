@@ -2,6 +2,7 @@
 
 html{
     background-color: #000505;
+    padding: 0;
 }
 main{
     display: flex;
@@ -9,34 +10,40 @@ main{
     flex-direction: column;
     font-family: 'Arvo', serif;
     padding-left: 5%;
+    padding-right: 5%;
+    margin: 0;
+    max-width: 70%;
     color: #FEFCFD;
 }
 .primary, .secondary{
-    width: 600px;
+    
     text-align: center;
     padding: 1% 0% 1% 0%;
-    margin: 0.5%;
+    margin: 1vh;
     background-color: #5D5D81;
     font-family: 'Arvo', serif;
     color: #FEFCFD;
-    font-size: 24px;
+    font-size: 100%;
 }
 .secondary{
     background-color: #3B3355;  
 }
 b{
-    font-size: 24px;
+    font-size: 100%;
     float:  left;
     margin-left: 10%;
 }
 #dictionary{
-    position: absolute;
-    top: 5%;
-    right: 15%;
-    max-width: 40%;
-    float: right;
     font-family: 'Arvo', serif;
     color: #FEFCFD;
+}
+@media screen and (min-width: 1300px){
+    #dictionary{
+        position: absolute;
+        top: 2%;
+        right: 10%;
+        max-width: 30%;
+    }
 }
 .origin{
     padding-left: 2%;
